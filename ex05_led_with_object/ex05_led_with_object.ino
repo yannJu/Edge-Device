@@ -32,7 +32,7 @@ void loop() {
   ++out_no %= 4;
   delay(1000);
 
-  // 한번 점열 돌면 3번 깜빡이기
+  // 한번 점멸 돌면 3번 깜빡이기
   if (out_no == 0) {
     for (int j = 0; j < 3; j++) {
       for (int i = 0; i < 4; i++) {

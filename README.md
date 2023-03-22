@@ -25,4 +25,6 @@
     -  *[ex05_led_with_object.ino](./ex05_led_with_object/ex05_led_with_object.ino)* 
        -  아두이노 동작 소스 코드
        -  `LED` 객체를 이용하여 **ex04** 를 구현
+       -  3가지 방안으로 **blink**
+       -   한번 순차적으로 돌면 `3번` 깜빡이기 기능 추가
 6.  
