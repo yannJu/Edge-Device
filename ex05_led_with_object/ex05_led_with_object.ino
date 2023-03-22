@@ -34,15 +34,19 @@ void loop() {
 
   // 한번 점멸 돌면 3번 깜빡이기
   if (out_no == 0) {
-    for (int j = 0; j < 3; j++) {
-      for (int i = 0; i < 4; i++) {
-        leds[i].on();
-      }
-      delay(500);
-      for (int i = 0; i < 4; i++) {
-        leds[i].off();
-      }
-      delay(500);
+    blink();
+  }
+}
+
+void blink() {
+  for (int j = 0; j < 3; j++) {
+    for (int i = 0; i < 4; i++) {
+      leds[i].on();
     }
+    delay(500);
+    for (int i = 0; i < 4; i++) {
+      leds[i].off();
+    }
+    delay(500);
   }
 }
