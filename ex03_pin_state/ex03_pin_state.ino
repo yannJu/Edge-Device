@@ -3,14 +3,16 @@ const int pd_led_pin = 4; //pull down pin
 
 int state = 0;
 
-void setup() {
+void setup() 
+{
   // put your setup code here, to run once:
   Serial.begin(115200); // 시리얼 속도를 맞춰주어야 함
   pinMode(pd_led_pin, OUTPUT);
   pinMode(pu_led_pin, OUTPUT);
 }
-
-void loop() {
+                                                                                                                
+void loop() 
+{
   // put your main code here, to run repeatedly:
   // state = 1 :  
   // state = 0 :
