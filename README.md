@@ -2,29 +2,14 @@
 
 1. ### [ex01_hello](./ex01_hello/)
    - `Arduino UNO` 를 이용하여 실행해보기
-2. ### [ex02_pin_practice](./ex02_pin_practice/)
-   - `Pull Up` 과 `Pull Down` 방식을 이용해보기
-   - **발광다이오드** 를 이용해 `Blink` 기능 구현
-3. ### [ex03_pin_state](./ex03_pin_state/)
-   - `Pull Up` 과 `Pull Down` 을 통해 **state** 확인
-   - `delay` 조절
-4. ### [ex04_4led_control](./ex04_4led_control)
-   - *[ex04_4led_control.ino](./ex04_4led_control/ex04_4led_control.ino)*
-     - 4개의 `led` 다이오드를 *차례대로* 불이 켜지도록 구현
-   - *[ex04_4led_forloop_control.ino](./ex04_4led_control/ex04_4led_forloop_control.ino)* 
-     - `for문`과 `array`를 이용하여 이전의 코드를 구현
-     - 동일한 **sketch** 에서 작업하여 `ex04_4led_control` 를 주석처리
-5.  ### [ex05_led_with_object](./ex05_led_with_object)
-    - `객체지향` 적으로 구현
-    -  이전에 `array`를 이용하여 순차적으로 점열했던 부분을 **LED** 라는 `객체` 배열로 구현
-    -  `LED` 객체는 앞으로 계속 사용하기 때문에 *[libraries](./libraries)* 폴더에 넣어 **라이브러리화** 해야함
-    -  *[LED.h](./libraries/LED/LED.h)* 
-       -  객체 `Header` 파일
-    -  *[LED.cpp](./libraries/LED/LED.cpp)* 
-       -  클래스 `정의` 파일 
-    -  *[ex05_led_with_object.ino](./ex05_led_with_object/ex05_led_with_object.ino)* 
-       -  아두이노 동작 소스 코드
-       -  `LED` 객체를 이용하여 **ex04** 를 구현
-       -  3가지 방안으로 **blink**
-       -   한번 순차적으로 돌면 `3번` 깜빡이기 기능 추가 
-6.  
+2. ### [LED(ex02_ex05)](./LED(ex02_ex05)/)
+   - `LED` 발광 다이오드를 이용한 실습
+   - `Serial` 포트 사용해보기
+   - **Blink** 해보기
+   - 클래스화(`객체지향적`) 으로 구현해보기
+   - `라이브러리화` 구현하기
+3. ### []()
+   - `저항` 을 이용하여 조금이라도 무리를 줄이기 위해 **하드웨어** 는 `풀업 방식` 사용
+   - 단, 헷갈릴 수 있기 때문에 일관성 유지를 위해 **논리회로** 구조는 `풀다운 방식` 처럼 구현
+     - `!digitalRead()` 를 이용
+4. 
