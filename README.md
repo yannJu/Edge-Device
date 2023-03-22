@@ -17,9 +17,10 @@
 5.  ### [ex05_led_with_object](./ex05_led_with_object)
     - `객체지향` 적으로 구현
     -  이전에 `array`를 이용하여 순차적으로 점열했던 부분을 **LED** 라는 `객체` 배열로 구현
-    -  *[LED.h](./ex05_led_with_object/LED.h)* 
+    -  `LED` 객체는 앞으로 계속 사용하기 때문에 *[libraries](./libraries)* 폴더에 넣어 **라이브러리화** 해야함
+    -  *[LED.h](./libraries/LED/LED.h)* 
        -  객체 `Header` 파일
-    -  *[LED.cpp](./ex05_led_with_object/LED.cpp)* 
+    -  *[LED.cpp](./libraries/LED/LED.cpp)* 
        -  클래스 `정의` 파일 
     -  *[ex05_led_with_object.ino](./ex05_led_with_object/ex05_led_with_object.ino)* 
        -  아두이노 동작 소스 코드
