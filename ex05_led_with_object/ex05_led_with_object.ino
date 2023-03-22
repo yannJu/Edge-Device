@@ -12,8 +12,8 @@ void loop() {
   int n;
 
   for (n = 0; n < 4; n++) {
-    // if (n == out_no) leds[n].on();
-    // else leds[n].off();
+    if (n == out_no) leds[n].on();
+    else leds[n].off();
 
     // ====================
     // 혹은 toggle 을 이용하여 아래와 같이도 구현 가능
@@ -26,9 +26,23 @@ void loop() {
     // ====================
     // 혹은 setValue 를 이용하여 구현 가능
     // ====================
-    leds[n].setValue(n == out_no);
+    // leds[n].setValue(n == out_no);
   }
 
   ++out_no %= 4;
   delay(1000);
+
+  // 한번 점열 돌면 3번 깜빡이기
+  if (out_no == 0) {
+    for (int j = 0; j < 3; j++) {
+      for (int i = 0; i < 4; i++) {
+        leds[i].on();
+      }
+      delay(500);
+      for (int i = 0; i < 4; i++) {
+        leds[i].off();
+      }
+      delay(500);
+    }
+  }
 }
