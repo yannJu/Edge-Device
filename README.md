@@ -14,4 +14,14 @@
    - *[ex04_4led_forloop_control.ino](./ex04_4led_control/ex04_4led_forloop_control.ino)* 
      - `for문`과 `array`를 이용하여 이전의 코드를 구현
      - 동일한 **sketch** 에서 작업하여 `ex04_4led_control` 를 주석처리
-5. 
+5.  ### [ex05_led_with_object](./ex05_led_with_object)
+    - `객체지향` 적으로 구현
+    -  이전에 `array`를 이용하여 순차적으로 점열했던 부분을 **LED** 라는 `객체` 배열로 구현
+    -  *[LED.h](./ex05_led_with_object/LED.h)* 
+       -  객체 `Header` 파일
+    -  *[LED.cpp](./ex05_led_with_object/LED.cpp)* 
+       -  클래스 `정의` 파일 
+    -  *[ex05_led_with_object.ino](./ex05_led_with_object/ex05_led_with_object.ino)* 
+       -  아두이노 동작 소스 코드
+       -  `LED` 객체를 이용하여 **ex04** 를 구현
+6.  
