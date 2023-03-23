@@ -19,4 +19,7 @@
        - **Interrupt** 방식
      - `SimpleTimer` 다운 : 소프트웨어적 타이머
        - **Polling** 방식
-5. 
+5. ### [AnalogIO(ex14_)](./AnalogIO(ex14_)/)
+ - **아날로그**값을 입력으로 받아서 실습
+ - 
+1. 
