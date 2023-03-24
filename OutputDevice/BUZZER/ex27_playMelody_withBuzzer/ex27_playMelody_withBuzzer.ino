@@ -1,5 +1,3 @@
-#include <BUTTON.h>
-
 #define NOTE_C4   262  // 4옥타브 도
 #define NOTE_D4   294  // 4옥타브 레
 #define NOTE_E4   330  // 4옥타브 미
@@ -34,29 +32,14 @@ int noteDuration[NUM] ={
 
 const int speaker_pin = 9;
 
-BUTTON btn(2);
-int btnClick = 0;
-
-int time;
-
 void setup() {
   pinMode(speaker_pin, OUTPUT);
-  btn.setCallBack(btnPressed);
-
-  Serial.begin(9600);
 }
 
 void loop() {
-  btn.check();
-}
-
-void btnPressed() {
   int m, d, dd;
-  int nowTime, oldTime;
 
-  if (++btnClick % 2) {
-  Serial.println(btnClick);
-    for (m = 0; m < NUM; m++) {
+  for (m = 0; m < NUM; m++) {
       d = 1000 / noteDuration[m];
       dd = d * 1.3;
 
@@ -70,8 +53,4 @@ void btnPressed() {
       }
     }
     delay(1000);
-  }
-  else {
-    noTone(speaker_pin);
-  }  
 }
