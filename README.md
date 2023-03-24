@@ -24,4 +24,7 @@
     - `가변저항기` 를 이용한 아날로그 값 **입력**
     - `PWMLed` 를 이용하여 아날로그 값 **출력**
     - **PWMLed**, **Analog** 클래스 생성
-6. 
+6. ### [OutputDevice(ex18_)](./OutputDevice/)
+    - 각종 **출력 장치** 를 이용한 다양한 예제 실행
+    - `RGB_LED` 사용 : *[RGB LED](./OutputDevice/RGB%20LED/)*  
+7. 
