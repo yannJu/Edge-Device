@@ -44,5 +44,8 @@
        -  *[ex28_playMelody_with_pitches](./BUZZER/ex28_playMelody_with_pitches/)* : **주파수 응용파일** 을 받아 범용적으로 처리하기
           -  `File > Examples > Digital > toneKeyboard` 에 나와있음 → **Copy**  해서 쓰자 . . 
           - Melody 와 Duration 을 외부에서 검색해서 헤더파일로 추가
-        - *[]()* : **Melody** 클래스화 & 라이브러리화 를 통한 *범용적* 구현
+        - *[ex29_create_Melody_Class](./BUZZER/ex29_create_Melody_Class/)* : **Melody** 클래스화 & 라이브러리화 를 통한 *범용적* 구현
+          - **Melody** 클래스는 [libraries](../libraries/) 폴더에 위치
+          - 음악을 **재생** 하고 있었는지의 여부를 *체크*
+          - **duration** 을 `millis()` 를 이용하여 체크
 5.  
