@@ -22,13 +22,21 @@
         - "1023" 에서 "910" 이 되고 싶어도 "9103" 과 같이 남음
         - `clear` 후에 다시 `print` 하도록 하자 `'.'` ? ▷ 너무 심하기 **깜빡거림**
         - <p style = "color: navy">항상 4자리로 포맷팅 하자 . .   → sprintf</p>
-3.  ### [MINICOM(ex24_ex)](./MINICOM)
+3.  ### [MINICOM(ex24_ex25)](./MINICOM)
     -  `Timer`, `LiquidCrystal_I2C`, `Serial` 과 같은 경우 자주 쓰임
     -  따라서 `MiniCom` 이라는 클래스를 만들어 호출시 사용
     -  `MiniCom` 은 [libraries](../libraries/) 에 위치
     -  `LCD` 초기화, `Timer` 정의, 출력함수 구현 등으로 이루어짐
     -  `MiniCom` 을 이용한 예제 실습
        -  *[ex24_MiniCom_exercise](./MINICOM//ex24_MiniCom_exercise)* : *1초 간격* 으로 `LED`를 **blink** + *현재 상태* 를 `LCD` 로 **출력**해보기
-       -  **ex24** 의 `check()` 함수를 수정하여 `센싱` 시 종종 골격으로 사용
+          -  **ex24** 의 `check()` 함수를 수정하여 `센싱` 시 종종 골격으로 사용
+       -  *[ex25_LEDcontrol_withLCD](./MINICOM/ex25_LEDcontrol_withLCD/)* : `가변저항기` 에서 **입력** 받아 `LED` 밝기 조절 및 `LCD` 에 출력
     -  `MiniCom` 을 **base** 로 사용하여 다른 기능에서 필요시 **상속** 받아 사용할 예정
-4.  
+4.  ### [BUZZER(ex26_ex)](./BUZZER/) 
+    - **능동** 부저, **수동** 부저
+    -   `능동부저` : ON/OFF 로 구성되어 **한 음** 만 출력
+    -   `수동부저` : **진동** 에 의해 출력
+    -  `Buzzer` 를 이용하여 예제 실습
+       -  *[ex26_Buzzer_exercise](./BUZZER/ex26_Buzzer_exercise/)* : 능동`Buzzer` 를 사용하여 `버튼`이 **클릭**되면 2초간 소리내고 끄기
+          -  `Buzzer`와 `Led`가 연결되어있음 → `LED` 객체로 `Buzzer`를 불러와도 됨
+5.  
