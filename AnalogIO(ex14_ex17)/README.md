@@ -15,4 +15,11 @@
    - `Duty` : 전류 비율을 나타냄
    - 서서히 밝아지다가 다 밝아지면 2초간 꺼짐
    - 너무 빠르게 **Perse** 가 동작하기 때문에 눈으로 보기에는 서서히 *밝아지는 것 처럼* 보임
-3. 
+3. ### [ex16_PWMLed_signal_wthClass](./ex16_PWMLed_signal_wthClass)
+   - *[PWMLed](../libraries/PWMLed/)* 라는 클래스를 생성 → 이때 *[LED](../libraries/LED/)* 를 상속  받음 
+   - **PWMLed** 클래스를 통해 `ex15` 를 직관적이게 구현
+   - `가변저항기` 값을 입력받아 `LED` 밝기 *조절* 해보기
+4. ### [ex17_PWMLed_withAnalogClass](./ex17_PWMLed_withAnalogClass)
+   - *[Analog](../libraries/Analog/)* 라는 클래스 생성 → `ex16` 에서 센서 값을 **Read** 하고 **map** 하는 과정을 클래스 함수로 생성
+   - 이를 이용하여 `ex16` 기능을 구현 
+5. 

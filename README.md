@@ -19,7 +19,9 @@
        - **Interrupt** 방식
      - `SimpleTimer` 다운 : 소프트웨어적 타이머
        - **Polling** 방식
-5. ### [AnalogIO(ex14_)](./AnalogIO(ex14_)/)
- - **아날로그**값을 입력으로 받아서 실습
- - 
-1. 
+5. ### [AnalogIO(ex14_ex17)](./AnalogIO(ex14_ex17)/)
+    - **아날로그**값을 입력으로 받아서 실습
+    - `가변저항기` 를 이용한 아날로그 값 **입력**
+    - `PWMLed` 를 이용하여 아날로그 값 **출력**
+    - **PWMLed**, **Analog** 클래스 생성
+6. 
