@@ -35,8 +35,13 @@
 4.  ### [BUZZER(ex26_ex)](./BUZZER/) 
     - **능동** 부저, **수동** 부저
     -   `능동부저` : ON/OFF 로 구성되어 **한 음** 만 출력
-    -   `수동부저` : **진동** 에 의해 출력
+    -   `수동부저` : **진동(Perse 파)** 에 의해 출력
     -  `Buzzer` 를 이용하여 예제 실습
        -  *[ex26_Buzzer_exercise](./BUZZER/ex26_Buzzer_exercise/)* : 능동`Buzzer` 를 사용하여 `버튼`이 **클릭**되면 2초간 소리내고 끄기
           -  `Buzzer`와 `Led`가 연결되어있음 → `LED` 객체로 `Buzzer`를 불러와도 됨
+       -  *[ex27_playMelody_withBuzzer](./BUZZER/ex27_playMelody_withBuzzer/)* : 수동`Buzzer`를 이용하여 **곰세마리** 연주하기
+          -  `버튼` 을 누르면 연주를 **중단/시작** 하기
+       -  *[ex28_playMelody_with_pitches](./BUZZER/ex28_playMelody_with_pitches/)* : **주파수 응용파일** 을 받아 범용적으로 처리하기
+          -  `File > Examples > Digital > toneKeyboard` 에 나와있음 → **Copy**  해서 쓰자 . . 
+          - Melody 와 Duration 을 외부에서 검색해서 헤더파일로 추가
 5.  
