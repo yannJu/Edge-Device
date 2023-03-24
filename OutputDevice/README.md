@@ -16,5 +16,10 @@
     - `LCD ` 를 이용한 여러 예제 실습
       - *[ex20_printString](./LCD/ex20_printString/)* : `LCD`  장치에 문자열 띄우기
       - *[ex21_StringScroll](./LCD/ex21_StringScroll/)* : `LCD`  장치에 문자열 띄워서 **스크롤** 시키기
-      - 
+      - *[ex22_print_user_define_pattern](./LCD/ex22_print_user_define_pattern/)* : 직접 **pattern** 만들어 띄우기
+      - *[ex23_LCD_with_varResister](./LCD/ex23_LCD_with_varResister/)* : `가변저항기` 값을 **입력** 받아 `LCD`에 **출력**
+        - "1023" 이후 값을 *줄일 때* (4자리 → 3자리)  예전에 있던 값이 덮어씌워지지 않아서 **남아있음**
+        - "1023" 에서 "910" 이 되고 싶어도 "9103" 과 같이 남음
+        - `clear` 후에 다시 `print` 하도록 하자 `'.'` ? ▷ 너무 심하기 **깜빡거림**
+        - <p style = "color: navy">항상 4자리로 포맷팅 하자 . . </p>
 3.  
