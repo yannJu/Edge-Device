@@ -23,6 +23,10 @@ void check() {
     SimpleTimer &timer = com.getTimer();
     timer.deleteTimer(timer_id);
     timer_id = -1;
+    
+    // 전등이 켜진 상태로 버튼을 다시 누르게 되면 계속 전등이 켜져있으므로 상태를 강제로 변화해주어야 함.
+    relay_out = false;
+    digitalWrite(relay_pin, relay_out);
 
     com.print(1, ". . .");
   }
