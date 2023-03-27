@@ -3,5 +3,6 @@
 /libraries/TimerOne/
 /libraries/SimpleTimer/
 /libraries/Keypad/
+/libraries/MFRC522
 /libraries/readme.txt
 /libraries/LiquidCrystal_I2C

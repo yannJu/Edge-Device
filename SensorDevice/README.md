@@ -12,11 +12,17 @@
          -  **3초** 동안 버튼 안누르면 꺼짐
          -  일정 횟수 만큼 틀리면 **1분** 동안 입력 금지
          -  . . 등등
-2. ### [JOY STICK(ex37_ex)](./JOY%20STICK/)
+2. ### [JOY STICK(ex37_ex38)](./JOY%20STICK/)
    -  `X`, `Y` 의 **아날로그** 입력값을 받음
    -  조이스틱을 누름으로써 `Z` 값을 입력받음
    -  자동차 속도조절, 회전, 카메라 회전등에 사용
    -  `Joy Stick` 관련 예제 실습
       -  *[ex37_joystick_exercise](./JOY%20STICK/ex37_joystick_exercise/)* : `JoyStick` 센서를 이용하여 **아날로그** 값 입력받기
       -  *[ex38_joystick_with_lcd](./JOY%20STICK/ex38_joystick_with_lcd/)* : `JoyStick` 의 값을 입력받아 `LCD`에 출력하고 `Servo` 모터의 **회전각**으로 출력하기
-3. 
+3. ### [RFID(ex39_ex)](./RFID/)
+   - `RFID` : 태그 안에 **코일** 이 감겨져있어서 특정 **주파수** 를 발생시키는 회로가 들어있음
+   - `RFID 리더기` 가 전파를 약하게 생성 → `태그` 가 전자기 유도 발생 → 자기장이 흐름으로써 **전원**으로 사용 
+   - `SPI통신` : `I2C`는 **address** 통해 통신하는데, `SPI`는 **Master-Slave** 방식으로 통신
+     - `MOSI(아두이노▷디바이스)`, `MISO(아두이노◁디바이스)`, `SCK`, `SS` 를 포함해야하므로 최소 **4개** 의 선 필요
+   - `MFRC522` 라이브러리 설치 *(gitIgnore)*
+4. 
