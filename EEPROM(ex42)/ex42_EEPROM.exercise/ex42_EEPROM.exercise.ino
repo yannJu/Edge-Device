@@ -35,12 +35,12 @@ void setup() {
   Serial.begin(9600);
   SPI.begin();
   mfrc.PCD_Init();
-  
-  servo.attach(servo_pin);
-  servo.write(0);
 
   com.init();
   com.print(0, "[[RFID]]");
+  
+  servo.attach(servo_pin);
+  close();
 
   // get EEPROM
   for (int i = 0; i < 4; i++) {
