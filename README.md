@@ -26,7 +26,7 @@
     - **PWMLed**, **Analog** 클래스 생성
 6. ### [OutputDevice(ex18_ex33)](./OutputDevice(ex18_ex33)/)
     - 각종 **출력 장치** 를 이용한 다양한 예제 실행
-    - `RGB_LED` 사용 : *[RGB LED](./OutputDevice/RGB%20LED/)*  
+    - `RGB_LED` 사용 : *[RGB LED](./OutputDevice(ex18_ex33)/RGB_LED)*  
     - `LCD` 사용 : *[LCD](./OutputDevice(ex18_ex33)/LCD)*
     - `MINICOM` 객체 생성 : *[MINICOM](./OutputDevice(ex18_ex33)/MINICOM)*
     - `BUZZER` 사용 : *[BUZZER](./OutputDevice(ex18_ex33)/BUZZER)*
