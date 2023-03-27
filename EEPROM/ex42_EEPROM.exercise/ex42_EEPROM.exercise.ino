@@ -4,6 +4,7 @@
 #include <Servo.h>
 #include <MiniCom.h>
 #include <BUTTON.h> // ID를 고정해두면 좋지 않기 때문에 버튼을 클릭하면 카드 등록할 수 있도록 함
+#include <EEPROM.h> // myID 를 영구 저장하기 위해 EEPROM 사용
 
 #define RST_PIN 9
 #define SS_PIN 10
@@ -36,9 +37,15 @@ void setup() {
   mfrc.PCD_Init();
   
   servo.attach(servo_pin);
+  servo.write(0);
 
   com.init();
   com.print(0, "[[RFID]]");
+
+  // get EEPROM
+  for (int i = 0; i < 4; i++) {
+    myID[i] = EEPROM.read(i);
+  }
 }
 
 void loop() {
@@ -109,5 +116,6 @@ void registerID(byte uid[]) {
   com.print(1, "Regist Success-");
   for (int i = 0; i < 4; i++) {
     myID[i] = uid[i];
+    EEPROM.write(i, uid[i]); //i번지에 uid[i] 저장
   }
 }

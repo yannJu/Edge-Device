@@ -32,6 +32,11 @@
     - `BUZZER` 사용 : *[BUZZER](./OutputDevice(ex18_ex33)/BUZZER)*
     - `RELAY` 사용 : *[RELAY](./OutputDevice(ex18_ex33)/RELAY)*
     - `SERVO` 사용 : *[SERVO](./OutputDevice(ex18_ex33)/SERVO)*
-7. ### [SensorDevice](./SensorDevice/)
+7. ### [SensorDevice(ex34_ex41)](./SensorDevice/)
    - 각종 **센서** 를 이용하여 `입력장치` 처럼 사용 
-8. 
+8. ### [EEPROM(ex42)](./EEPROM/)
+   - `ex41` 에서 **myID** 를 전원과 상관없이 **저장** 하기 위해 영구 메모리인 `EEPROM` 사용
+   - 실제 사용시에는 **한가지의 기능** 만 개발하기 때문에 덮어씌워질 염려가 적음
+     - 다만 현재는 **하나의** 아두이노에 **여러** 프로그램을 주기 때문에 프로그램 실행마다 **덮어씌워질** 가능성 있음
+   - *[ex42_EEPROM.exercise](./EEPROM/ex42_EEPROM.exercise/)* : `EEPROM` 에 **myID** 값을 할당하여 `setup`시 `read` 하도록 기능 구현
+9.  
