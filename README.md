@@ -32,4 +32,6 @@
     - `BUZZER` 사용 : *[BUZZER](./OutputDevice(ex18_ex33)/BUZZER)*
     - `RELAY` 사용 : *[RELAY](./OutputDevice(ex18_ex33)/RELAY)*
     - `SERVO` 사용 : *[SERVO](./OutputDevice(ex18_ex33)/SERVO)*
-7. 
+7. ### [SensorDevice](./SensorDevice/)
+   - 각종 **센서** 를 이용하여 `입력장치` 처럼 사용 
+8. 
