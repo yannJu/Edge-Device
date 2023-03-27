@@ -28,4 +28,4 @@
    - `RFID` 관련 예제 실습
      - *[ex39_RFID_exercise](./RFID/ex39_RFID_exercise/)* : `RFID` 를 통해 **카드** 및 **동글** 이 잘 인식되는지 확인
      - *[ex40_RFID_exercise2](./RFID/ex40_RFID_exercise2/)* : `RFID` 의 **ID** 확인 여부를 통해 `Buzzer` 및 `LED` 동작
-4. 
+     - *[ex41_door_lock_with_RFID](./RFID/ex41_door_lock_with_RFID/)* :  `ex40`에 `Button` 을 누른상태로 **카드** 접촉시 **ID**가 등록되게 하는 기능 추가
