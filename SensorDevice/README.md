@@ -19,7 +19,7 @@
    -  `Joy Stick` 관련 예제 실습
       -  *[ex37_joystick_exercise](./JOY%20STICK/ex37_joystick_exercise/)* : `JoyStick` 센서를 이용하여 **아날로그** 값 입력받기
       -  *[ex38_joystick_with_lcd](./JOY%20STICK/ex38_joystick_with_lcd/)* : `JoyStick` 의 값을 입력받아 `LCD`에 출력하고 `Servo` 모터의 **회전각**으로 출력하기
-3. ### [RFID(ex39_ex)](./RFID/)
+3. ### [RFID(ex39_ex41)](./RFID/)
    - `RFID` : 태그 안에 **코일** 이 감겨져있어서 특정 **주파수** 를 발생시키는 회로가 들어있음
    - `RFID 리더기` 가 전파를 약하게 생성 → `태그` 가 전자기 유도 발생 → 자기장이 흐름으로써 **전원**으로 사용 
    - `SPI통신` : `I2C`는 **address** 통해 통신하는데, `SPI`는 **Master-Slave** 방식으로 통신
