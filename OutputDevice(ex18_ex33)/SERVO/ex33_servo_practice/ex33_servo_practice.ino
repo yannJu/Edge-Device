@@ -4,10 +4,12 @@
 #include <MiniCom.h>
 #include <SimpleTimer.h>
 
+// 센서 ================
 BUTTON btn(2);
 LED led(9);
 Servo servo;
 MiniCom com;
+// =====================
 
 int servo_pin = 5;
 int timer_id = -1;
