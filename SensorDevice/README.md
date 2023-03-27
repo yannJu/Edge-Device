@@ -25,4 +25,7 @@
    - `SPI통신` : `I2C`는 **address** 통해 통신하는데, `SPI`는 **Master-Slave** 방식으로 통신
      - `MOSI(아두이노▷디바이스)`, `MISO(아두이노◁디바이스)`, `SCK`, `SS` 를 포함해야하므로 최소 **4개** 의 선 필요
    - `MFRC522` 라이브러리 설치 *(gitIgnore)*
+   - `RFID` 관련 예제 실습
+     - *[ex39_RFID_exercise](./RFID/ex39_RFID_exercise/)* : `RFID` 를 통해 **카드** 및 **동글** 이 잘 인식되는지 확인
+     - *[ex40_RFID_exercise2](./RFID/ex40_RFID_exercise2/)* : `RFID` 의 **ID** 확인 여부를 통해 `Buzzer` 및 `LED` 동작
 4. 
