@@ -20,10 +20,10 @@ int MiniCom::setInterval(unsigned long interval, timer_callback f) { // 타이�
 }
 
   // LCD light 관련
-void backlightOn() {
+void MiniCom::backlightOn() {
   lcd.backlight();
 }
-void backlightOff() {
+void MiniCom::backlightOff() {
   lcd.noBacklight();
 }
 

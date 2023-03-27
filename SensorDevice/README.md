@@ -13,3 +13,10 @@
          -  일정 횟수 만큼 틀리면 **1분** 동안 입력 금지
          -  . . 등등
 2. ### [JOY STICK(ex37_ex)](./JOY%20STICK/)
+   -  `X`, `Y` 의 **아날로그** 입력값을 받음
+   -  조이스틱을 누름으로써 `Z` 값을 입력받음
+   -  자동차 속도조절, 회전, 카메라 회전등에 사용
+   -  `Joy Stick` 관련 예제 실습
+      -  *[ex37_joystick_exercise](./JOY%20STICK/ex37_joystick_exercise/)* : `JoyStick` 센서를 이용하여 **아날로그** 값 입력받기
+      -  *[ex38_joystick_with_lcd](./JOY%20STICK/ex38_joystick_with_lcd/)* : `JoyStick` 의 값을 입력받아 `LCD`에 출력하고 `Servo` 모터의 **회전각**으로 출력하기
+3. 
