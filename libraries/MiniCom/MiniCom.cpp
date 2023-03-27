@@ -19,6 +19,14 @@ int MiniCom::setInterval(unsigned long interval, timer_callback f) { // 타이�
   return timer.setInterval(interval, f);
 }
 
+  // LCD light 관련
+void backlightOn() {
+  lcd.backlight();
+}
+void backlightOff() {
+  lcd.noBacklight();
+}
+
 // LCD 출력 관련 Func
 // 오버로딩을 통한 print 구현
 void MiniCom::print(int row, String msg) {

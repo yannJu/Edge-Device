@@ -20,6 +20,10 @@ public:
   int setInterval(unsigned long interval, timer_callback f);
   SimpleTimer& getTimer() {return timer;};
 
+  // LCD light 관련
+  void backlightOn();
+  void backlightOff();
+
   // LCD 출력 관련 Func
   // 오버로딩을 통한 print 구현
   void print(int row, String msg);
