@@ -32,7 +32,7 @@
           -  **ex24** 의 `check()` 함수를 수정하여 `센싱` 시 종종 골격으로 사용
        -  *[ex25_LEDcontrol_withLCD](./MINICOM/ex25_LEDcontrol_withLCD/)* : `가변저항기` 에서 **입력** 받아 `LED` 밝기 조절 및 `LCD` 에 출력
     -  `MiniCom` 을 **base** 로 사용하여 다른 기능에서 필요시 **상속** 받아 사용할 예정
-4.  ### [BUZZER(ex26_ex)](./BUZZER/) 
+4.  ### [BUZZER(ex26_ex29)](./BUZZER/) 
     - **능동** 부저, **수동** 부저
     -   `능동부저` : ON/OFF 로 구성되어 **한 음** 만 출력
     -   `수동부저` : **진동(Perse 파)** 에 의해 출력
@@ -48,4 +48,9 @@
           - **Melody** 클래스는 [libraries](../libraries/) 폴더에 위치
           - 음악을 **재생** 하고 있었는지의 여부를 *체크*
           - **duration** 을 `millis()` 를 이용하여 체크
-5.  
+5.  ### [RELAY(ex30)](./RELAY/)
+    - `NC`, `NO` `Signal` 로 이루어진 센서 
+    - `Switch` 와 동일하게 직관적 연결을 위해 `NO` 부분에 전원 연결
+    - `RELAY` 관련 예제 실습
+      - *[ex30_RelaySensor](./RELAY/ex30_RelaySensor/)* : `MiniCom` 클래스를 함께 사용 , 버튼을 누르면 **0.5초** 마다 **Blink**
+6.  
