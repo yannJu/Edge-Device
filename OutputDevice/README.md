@@ -55,10 +55,12 @@
       - *[ex30_RelaySensor](./RELAY/ex30_RelaySensor/)* : `MiniCom` 클래스를 함께 사용 , 버튼을 누르면 **0.5초** 마다 **Blink**
 6.  ### [SERVO(ex31_ex)](./SERVO/)
     - `0-180` 도 사이의 각도를 표현할 수 있다.
+    - 이때 각도는 **펄스** 의 폭에 따라 표현된다.
     - **Servo.h** 라이브러리를 이용하여 회전 시킬 수 있다.
     - <a style = "color : orange">주황색</a> 선은 `Signal`, <a style = "color : red">빨간색</a> 선은 `VCC`, <a style = "color : brown">갈색</a> 선은 `GND`
     - `attach`, `write` 함수가 핵심
     - `Servo` 관련 예제 실습  
       - *[ex31_servo_exercise](./SERVO/ex31_servo_exercise/)* : `Servo` 센서에 값을 **입력** 하여 모터 회전시키기
       - *[ex32_servo_with_variable_register](./SERVO/ex32_servo_with_variable_register/)* : `가변 저항기` 에서 값을 **입력** 받아 아날로그 값을 모터에 출력하여 회전시키기
+      - *[ex33_servo_practice](./SERVO/ex33_servo_practice/)* : `Button`을 누르면 짧게 **삐-** 소리를 낸 후 **모터 동작**(문열기) → 이후 **3초** 후 **모터 동작**(문닫기) / 이때 문 닫히기 전 버튼을 다시 클릭하면 _**시간 연장**_
 7.  
