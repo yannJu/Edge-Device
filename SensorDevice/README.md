@@ -29,3 +29,12 @@
      - *[ex39_RFID_exercise](./RFID/ex39_RFID_exercise/)* : `RFID` 를 통해 **카드** 및 **동글** 이 잘 인식되는지 확인
      - *[ex40_RFID_exercise2](./RFID/ex40_RFID_exercise2/)* : `RFID` 의 **ID** 확인 여부를 통해 `Buzzer` 및 `LED` 동작
      - *[ex41_door_lock_with_RFID](./RFID/ex41_door_lock_with_RFID/)* :  `ex40`에 `Button` 을 누른상태로 **카드** 접촉시 **ID**가 등록되게 하는 기능 추가
+4. ### [CdS(ex43_ex)](./CdS/)
+   - `조도센서`는 밝기를 **입력** 으로 받음
+   - **절대값**을 측정하는 것이 아닌 `밝은가  어두운가` 를 측정
+   - **밝을수록** 저항이 `↑` : 전압 `↑`
+   - **어두울수록** 저항이 `↓` : 전압 `↓`
+   - `조도센서` 관련 예제 실습
+     - *[ex43_CdS_exercise](./CdS/ex43_CdS_exercise/)* : `CdS` 센서를 이용하여 **LED** 점등 + 값이 **bouncing** 하는 것을 해결 *(평균점 || 기준점을 2개)*
+     - *[ex44_CdS_withPWMLED](./CdS/ex44_CdS_withPWMLED/)* : **밝기** 에 따라 **LED** 값을 조정 (아날로그 출력)
+5. 
