@@ -10,4 +10,5 @@
      - *[ex49_PIR_exercise](./PIR/ex49_PIR_exercise/)* :  **움직임**의 변화가 발생하면 `LED`를 점등하는 예제
      - *[ex50_PIR_withClass](./PIR/ex50_PIR_withClass/)* : [PIR.h](../libraries/PIR/PIR.h) 와  [PIR.cpp](../libraries/PIR/PIR.cpp)를 만들어서 **라이브러리화** 하기 > 위치는 [libraries](../libraries/) 로 이동
        - `Servo` 모터를 추가하여 **자동문** 기능 구현
+       - **자동문** 이 닫히기 전 감지된 경우 `시간연장`
 2. 
