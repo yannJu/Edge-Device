@@ -22,6 +22,6 @@ void check() {
 
   ftp = ftp * 100.0 + 0.5;
 
-  // dht11 은 24.80 나옴
+  // dht11 은 24.80 나옴                                                                                                                            
   com.print(1, "T : ", ftp);
 }
