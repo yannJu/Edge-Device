@@ -29,5 +29,5 @@
      - 그아래의 `LED`는 **threshold** 값 을 넘었을 경우 켜짐 ( = 음성감지 )
    - `MIC` 센서를 활용한 예제 실습
      - *[ex54_MIC_exercise](./MIC/ex54_MIC_exercise/)* : `MIC` 센서를 이용하여 **아날로그** 값으로 입력받고 **LED** 의 값 조절
-     - *[](./MIC/)*
+     - *[ex55_Mic_WithLED](./MIC/ex55_Mic_WithLED/)* : `MIC` 센서에서 음성을 **감지** 하여 범위에 따라 `LED` 점등
 4. 
