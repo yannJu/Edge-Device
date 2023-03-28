@@ -19,4 +19,5 @@
      - *[ex51_Ultrasonic_exercise](./Ultrasonic/ex51_Ultrasonic_exercise/)* : `초음파센서` 를 이용하여 **거리** 측정
      - *[ex52_Ultrasonic_withClass](./Ultrasonic/ex52_Ultrasonic_withClass/)* : [ex51](./Ultrasonic/ex51_Ultrasonic_exercise/) 을 `Ultra` 라이브러리를 생성하여 구현 > [Ultra](../libraries/Ultra/) 는 [libraries](../libraries/) 에 이동
        - **기준거리(threshold)** 변수를 만들고 범위에 **들어온** 경우나 **벗어난** 경우 처리
+     - *[ex53_Object_detect](./Ultrasonic/ex53_Object_detect/)* : **물체 감지 경보기** 구현
 3. 

@@ -31,10 +31,14 @@ int Ultra::run() {
   if (!state && distance <= threshold) { // 기준거리에 진입해 있으면서 문이 닫혀있는 경우
     state = true; // 문열기
     if (on_f) on_f();
+
+    delay(1000); //bouncing 을 막기 위한 delay
   }
   else if (state && (distance < 0 || distance > threshold + 2)) { // 문이 열려있으면서 기준거리에서 벗어난 경우
     state = false;
     if (off_f) off_f();
+
+    delay(1000);
   }
 
   if (distance == 0 || distance > threshold) return 0; // 어떤 것도 감지되지 않은 경우
