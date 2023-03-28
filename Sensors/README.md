@@ -1,4 +1,4 @@
-## Sensor(ex49_) 🦾
+## Sensor(ex49_ex55) 🦾
 ---
 1. ### [적외선 PIR 센서(ex49_ex50)](./PIR/)
    - `적외선 PIR` 센서는 **수동 적외선** 센서
@@ -21,7 +21,7 @@
        - **기준거리(threshold)** 변수를 만들고 범위에 **들어온** 경우나 **벗어난** 경우 처리
      - *[ex53_Object_detect](./Ultrasonic/ex53_Object_detect/)* : **물체 감지 경보기** 구현
        - `delay` 를 줌으로 **bouncing** 해결
-3. ### [MIC(ex54)](./MIC/)
+3. ### [MIC(ex54_ex55)](./MIC/)
    - `소리센서(음성감지센서)` 의 **가변저항** 을 이용하여 **threshold** 값을 조정
      - `민감도`를 조정
    - `MIC` 센서에 `LED`가 두개 있다.
@@ -30,4 +30,3 @@
    - `MIC` 센서를 활용한 예제 실습
      - *[ex54_MIC_exercise](./MIC/ex54_MIC_exercise/)* : `MIC` 센서를 이용하여 **아날로그** 값으로 입력받고 **LED** 의 값 조절
      - *[ex55_Mic_WithLED](./MIC/ex55_Mic_WithLED/)* : `MIC` 센서에서 음성을 **감지** 하여 범위에 따라 `LED` 점등
-4. 
