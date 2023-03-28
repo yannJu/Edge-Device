@@ -6,3 +6,5 @@
 /libraries/MFRC522
 /libraries/readme.txt
 /libraries/LiquidCrystal_I2C
+/libraries/DHT-sensor-library
+/libraries/Adafruit_Sensor
