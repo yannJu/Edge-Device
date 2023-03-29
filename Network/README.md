@@ -15,5 +15,9 @@
       -  `Serial 모니터` 에 `AT+NAME` 을 통해 블루트스 명을 출력
       -  `AT+NAME[변경이름]` 을 통해 블루투스 명을 변경할 수 있다.
       -  `AT+PIN[변경 pin]` 을 통해 PIN을 변경할 수 있다.
-   -  
+   -  `Bluetooth` 관련 예제 실습
+      -  *[ex57_Bluetooth_communicate](./Bluetooth/ex57_Bluetooth_communicate/)* : **아두이노** 프로그래밍으로 블루투스 모듈 통신
+         -  **아두이노**의 `loop` 도는 속도가 `Serial` 의 9600 보다 빠르기 때문에 `delay`를 줌으로써 수신 문자열이 **끊김**을 방지
+      -  *[](./)* : `Bluetooth` 기능을 **라이브러리화** > [libraries](../libraries/) 폴더에 이동
+         -  `MiniCom`을 상속하여 구성
 2. 
