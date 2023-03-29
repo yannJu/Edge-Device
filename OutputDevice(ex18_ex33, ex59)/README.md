@@ -1,4 +1,4 @@
-## OutputDevice(ex18_ex33, ex59_ex) 🎩
+## OutputDevice(ex18_ex33, ex59) 🎩
 ---
 1. ### [RGB LED(ex18_ex19)](./RGB%20LED/)
    - `RGB LED` 센서를 이용하여 출력 예제 다루기 
@@ -63,7 +63,7 @@
       - *[ex31_servo_exercise](./SERVO/ex31_servo_exercise/)* : `Servo` 센서에 값을 **입력** 하여 모터 회전시키기
       - *[ex32_servo_with_variable_register](./SERVO/ex32_servo_with_variable_register/)* : `가변 저항기` 에서 값을 **입력** 받아 아날로그 값을 모터에 출력하여 회전시키기
       - *[ex33_servo_practice](./SERVO/ex33_servo_practice/)* : `Button`을 누르면 짧게 **삐-** 소리를 낸 후 **모터 동작**(문열기) → 이후 **3초** 후 **모터 동작**(문닫기) / 이때 문 닫히기 전 버튼을 다시 클릭하면 _**시간 연장**_
-7. ### [DC(ex59_)](./DC/)
+7. ### [DC(ex59)](./DC/)
    - 전류의 **방향** 을 조절할 수 있는 `모터`
    - 건전지 전류를 `아두이노`에 맞게 **5V** 로 출력 할 수 있다. → 관련 _**Pin Head**_ 들이 있음
      - **점퍼** 케이블 : 속도 제어 가능
