@@ -21,4 +21,5 @@
       -  *[ex58_Bluetooth_BtMiniCom](./Bluetooth/ex58_Bluetooth_BtMiniCom/)* : `Bluetooth` 기능을 **라이브러리화** > [libraries](../libraries/) 폴더에 이동
          -  `MiniCom`을 상속하여 구성
          -  `LED`와 `SERVO` 센서를 통해 실습 진행
+      -  *[ex34 수정](../SensorDevice(ex34_ex48)/KEYPAD/ex35_keypad_exercise2)* : `KEYPAD` 대신 `Bluetooth` 통신으로 문열기
 2. 

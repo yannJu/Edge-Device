@@ -1,4 +1,5 @@
-#include <MiniCom.h>
+// #include <MiniCom.h>
+#include <BtMiniCom.h>
 #include <Keypad.h>
 #include <LED.h>
 #include <Servo.h>
@@ -7,9 +8,12 @@ Servo servo;
 int servo_pin = 3;
 int state = 0; // 0 : Close, 1 : Open
 
-LED led(12);
+// LED led(12);
+LED led(A0);
 
-MiniCom com;
+// MiniCom com;
+void receiveMsg(String msg);
+BtMiniCom com(13, 12, receiveMsg); 
 int time_id = -1;
 
 const byte ROWS = 4;
@@ -40,21 +44,25 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  bool isGet = getLine();
-
   com.run();
-  if (isGet) {
-    if (resultStr == pwd) {
-      // 문 개방(서보모터)
-      open();
-      SimpleTimer &timer = com.getTimer();
+  // bool isGet = getLine();
+  // if (isGet) check();
+  check();   
+}
 
-      time_id = timer.setTimeout(3000, close);
-    }
-    else beep(500);
-    
-    resultStr = "";
-  }      
+void check() {
+  if (resultStr == pwd) {
+    // 문 개방(서보모터)
+    open();
+    SimpleTimer &timer = com.getTimer();
+
+    time_id = timer.setTimeout(3000, close);
+  }
+  else {
+    // beep(500);
+    com.print(1, "Fail! -- ");
+  }
+  resultStr = "";
 }
 
 // '*' 을 입력받았을 때 true return -> '*' 은 제외하고 !
@@ -90,4 +98,9 @@ void close() {
   com.print(1, "[Door] is /Cls/");
   servo.write(0);
   state = 0;
+}
+
+void receiveMsg(String msg) {
+  resultStr = msg;
+  check();
 }
