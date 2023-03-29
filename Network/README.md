@@ -18,6 +18,7 @@
    -  `Bluetooth` 관련 예제 실습
       -  *[ex57_Bluetooth_communicate](./Bluetooth/ex57_Bluetooth_communicate/)* : **아두이노** 프로그래밍으로 블루투스 모듈 통신
          -  **아두이노**의 `loop` 도는 속도가 `Serial` 의 9600 보다 빠르기 때문에 `delay`를 줌으로써 수신 문자열이 **끊김**을 방지
-      -  *[](./)* : `Bluetooth` 기능을 **라이브러리화** > [libraries](../libraries/) 폴더에 이동
+      -  *[ex58_Bluetooth_BtMiniCom](./Bluetooth/ex58_Bluetooth_BtMiniCom/)* : `Bluetooth` 기능을 **라이브러리화** > [libraries](../libraries/) 폴더에 이동
          -  `MiniCom`을 상속하여 구성
+         -  `LED`와 `SERVO` 센서를 통해 실습 진행
 2. 
