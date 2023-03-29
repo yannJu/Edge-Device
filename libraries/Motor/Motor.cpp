@@ -1,3 +1,5 @@
+#include "Motor.h"
+
 Motor::Motor(int in1, int in2, int en) : in1(in1), in2(in2), en(en) {
   pinMode(in1, OUTPUT);
   pinMode(in2, OUTPUT);
