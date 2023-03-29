@@ -72,3 +72,5 @@
    - `DC` 모터 관련 실습
      - *[ex59_DCMotor_withClass](./DC/ex59_DCMotor_withClass/)* : `Motor` 와 `Car` 라이브러리화를 통해 **DC모터** 동작 > 각 라이브러리는 [libraries](../libraries/)로 이동
        - `forward()`, `backward()`, `stop()`, `turnLeft()`, `turnRight()`, `setSpeed()` 구현
+       - **DC모터**의 `5V` 를 아두이노의 `5V`에 연결하여 작동
+       - `Bluetooth` 통신을 통해 자동차를 동작
