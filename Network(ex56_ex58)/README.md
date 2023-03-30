@@ -32,5 +32,6 @@
      - *[ex61_nodeMCU_withClass](./NodeMCU/ex61_nodeMCU_withClass/)* : `WifiMiniCom` 라는 라이브러리를 만들어서 구현
        - `MiniCom` 을 상속받아 구현
        - 헤더파일등은 [libraries](../libraries/) 에 이동
-     - *[]()* : `NodeMCU` 를 이용하여 **웹서버** 만들기
+     - *[ex62_nodeMCU_webserver](./NodeMCU/ex62_nodeMCU_webserver/)* : `NodeMCU` 를 이용하여 **웹서버** 만들기
        - `NodeMCU` 가 **웹서버** 의 역할을 하도록 한다.
+         - `NodeMCU` 의 **IP**주소로 웹에서 접속하면 `NodeMCU` 서버가 `response` 한 값을 볼 수 있다.
