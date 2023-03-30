@@ -35,7 +35,7 @@
      - *[ex62_nodeMCU_webserver](./NodeMCU/ex62_nodeMCU_webserver/)* : `NodeMCU` 를 이용하여 **웹서버** 만들기
        - `NodeMCU` 가 **웹서버** 의 역할을 하도록 한다.
          - `NodeMCU` 의 **IP**주소로 웹에서 접속하면 `NodeMCU` 서버가 `response` 한 값을 볼 수 있다.
-3. ### [MQTT](./MQTT/)  
+3. ### [Mosquitto(ex63)](./Mosquitto/) & [MQTT(ex64_)](./MQTT/) 
    - 센서 디바이서에서 **정보**가 측정되면 해당 **정보**가 필요한 `client` 에게 전달 : `MQTT Broker`
      - 센서는 누가 해당 **정보** 를 필요로 하는지 알 필요가 없다.
    -   센서 = `Publisher` , 클라이언트 = `Subscriber` (보통은 이러한 관계를 갖지만 **둘다** 가능한 경우도 많다.)
@@ -62,7 +62,9 @@
         - 우리는 `nodeMCU` 가 `PC`로 들어오므로 **인바운드**
     - **Python** 으로 `Broker` 연동 : _**Paho**_
       - 이전에 사용한 `IoT` 가상환경 사용
-      - `Subscribe`생성 → *[ex61_sub01.py](./Mosquitto/ex61_sub01.py)*
+      - `Subscribe`생성 → *[ex63_sub01.py](./Mosquitto/ex63_sub01.py)*
         - `loop_forever()` 와 `loop_start()` 
         - **daemon thread** 와 **main thread** 실습
     - `NodeMCU` 에서 `MQTT` 사용
+      - *[ex64_nodeMCU_withMQTT](./MQTT/ex64_nodeMCU_withMQTT/)* : `NodeMCU` 에서 **Publish** 한 값을 `PC` 에서 **Subscribe** 하기
+        - `PC`에서 **Publish** 도 함께 진행 (`inTopic`)

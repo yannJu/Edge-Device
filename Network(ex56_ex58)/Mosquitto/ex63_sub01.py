@@ -5,12 +5,14 @@ def on_connect(client, userdata, flags, rc):
     print("Connected with result code " + str(rc))
     
     if rc == 0: 
-        client.subscribe("iot/#") # 연결 성공시 토픽 구독
+        # client.subscribe("iot/#") # 연결 성공시 토픽 구독
+        client.subscribe("outTopic")
     else:
         print(f"Connect Failed. . .  [[{rc}]]")
         
 def on_message(client, userdata, msg):
-    value = float(msg.payload.decode())
+    # value = float(msg.payload.decode())
+    value = msg.payload.decode()
     
     print(f" {msg.topic} {value} ")
     
@@ -31,6 +33,11 @@ except Exception as e:
     print("Error - ! >> ", e)
     
 # 메인스레드 동작  하면서 Subscribe 가 동시로 이루어짐
-while True: 
-    sleep(1) # 초 단위 : 1초
-    print('-*-*-*-*-*-*-*-*-*-*-*-') # 메인스레드의 역할 : 1초 단위로 출력
+# while True: 
+#     sleep(1) # 초 단위 : 1초
+#     print('-*-*-*-*-*-*-*-*-*-*-*-') # 메인스레드의 역할 : 1초 단위로 출력
+
+while True:
+    value = input("On(1)/Off(0)/Exit(2) >> ")
+    if (value == "2"): break;
+    client.publish("inTopic", value)
