@@ -35,3 +35,34 @@
      - *[ex62_nodeMCU_webserver](./NodeMCU/ex62_nodeMCU_webserver/)* : `NodeMCU` 를 이용하여 **웹서버** 만들기
        - `NodeMCU` 가 **웹서버** 의 역할을 하도록 한다.
          - `NodeMCU` 의 **IP**주소로 웹에서 접속하면 `NodeMCU` 서버가 `response` 한 값을 볼 수 있다.
+3. ### [MQTT](./MQTT/)  
+   - 센서 디바이서에서 **정보**가 측정되면 해당 **정보**가 필요한 `client` 에게 전달 : `MQTT Broker`
+     - 센서는 누가 해당 **정보** 를 필요로 하는지 알 필요가 없다.
+   -   센서 = `Publisher` , 클라이언트 = `Subscriber` (보통은 이러한 관계를 갖지만 **둘다** 가능한 경우도 많다.)
+       -   `Topic` 을 함께 보냄으로써 어떠한 **정보** 종류인지를 의미
+   -  `Broker` 는 많은 종류의 **Topic** 과 **Value** 를 가진다.
+   -  **Topic** 은 `Pub` 와 `Sub` 가 작동하는 기준이 된다.
+      -  **/** 를 이용하여 계층적으로 구성
+      -  **#** : 하위 토픽 `전체`
+      -  **+** : `level` 한개 
+   -  `QoS`  : `0`, `1`, `2` 단계로 나누어 제공
+      -  `0` : 메시지 **한번** 전달, **Fire and Forget** (`NodeMCU` 에서 주로 쓴다.)
+      -  `1` : 메시지 **여러번**, 핸드셰이킹 여부의 추적은 하되 **중복 여부** 는 되지 않음
+      -  `2` : 메시지 **한번**, 핸드셰이킹 추적 **O** + 복원
+   -  `MQTT Broker` 설치 : **_mosquitto_**
+      -  **환경변수** 설정
+      -  _mosquitto.conf_ 파일 수정 (하단에 **두줄** 추가)
+         ```
+         bind_address 0.0.0.0 : #Django 에서 allow address 한 것과 유사 
+         allow_anonymous true : #계정을 체크하지 않겠다 !
+         ```  
+      - **방화벽** 설정
+        - 외부 ▷ PC = `인바운드`
+        - PC  ▷ 외부 = `아웃바운드`
+        - 우리는 `nodeMCU` 가 `PC`로 들어오므로 **인바운드**
+    - **Python** 으로 `Broker` 연동 : _**Paho**_
+      - 이전에 사용한 `IoT` 가상환경 사용
+      - `Subscribe`생성 → *[ex61_sub01.py](./Mosquitto/ex61_sub01.py)*
+        - `loop_forever()` 와 `loop_start()` 
+        - **daemon thread** 와 **main thread** 실습
+    - `NodeMCU` 에서 `MQTT` 사용

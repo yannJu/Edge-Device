@@ -8,3 +8,4 @@
 /libraries/LiquidCrystal_I2C
 /libraries/DHT-sensor-library
 /libraries/Adafruit_Sensor
+/libraries/PubSubClient

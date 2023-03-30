@@ -32,6 +32,7 @@
     - `BUZZER` 사용 : *[BUZZER](./OutputDevice(ex18_ex33)/BUZZER)*
     - `RELAY` 사용 : *[RELAY](./OutputDevice(ex18_ex33)/RELAY)*
     - `SERVO` 사용 : *[SERVO](./OutputDevice(ex18_ex33)/SERVO)*
+    - `DC` 사용 : *[DC](./OutputDevice(ex18_ex33%2C%20ex59)/DC)*
 7. ### [SensorDevice(ex34_ex48)](./SensorDevice/)
    - 각종 **센서** 를 이용하여 `입력장치` 처럼 사용 
    - `KEYPAD` 
@@ -52,3 +53,5 @@
     - `MIC`  
 10. ### [Network(ex56_ex58)](./Network(ex56_ex58)/)
     - `Bluetooth` 통신 제어  
+    - `nodeMCU` 를 이용한 `WiFi` 통신
+    - `MQTT` 통신 : **mosquitto** 
