@@ -29,4 +29,8 @@
      - *[ex60_getIp_usingMCU](./NodeMCU/ex60_getIp_usingMCU/)* : **IP주소** 를 읽어와 동작시키기 
        - **esp8266** 의 `board`를 설치하여 `NodeMCU` 의 **port** 번호로 업로드
        - _**2.4Ghz**_ 로만 연결 가능
-     - 
+     - *[ex61_nodeMCU_withClass](./NodeMCU/ex61_nodeMCU_withClass/)* : `WifiMiniCom` 라는 라이브러리를 만들어서 구현
+       - `MiniCom` 을 상속받아 구현
+       - 헤더파일등은 [libraries](../libraries/) 에 이동
+     - *[]()* : `NodeMCU` 를 이용하여 **웹서버** 만들기
+       - `NodeMCU` 가 **웹서버** 의 역할을 하도록 한다.

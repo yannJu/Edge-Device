@@ -29,7 +29,7 @@ void wifi_connect() {
   }
 
   com.print(0, "WiFi Connected - !");
-  com.print(1, "IP / " + WiFi.localIP().toString());
+  com.print(1, "IP/" + WiFi.localIP().toString());
 
   Serial.println();
   Serial.println(WiFi.localIP());
