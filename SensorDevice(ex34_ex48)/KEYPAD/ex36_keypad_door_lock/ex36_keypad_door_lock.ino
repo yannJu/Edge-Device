@@ -25,8 +25,12 @@ byte rowPins[ROWS] = {7, 6, 5, 4}; // R1~R4 핀 번호
 byte colPins[COLS] = {8, 9, 10, 11}; // C1~C4 핀 번호
 
 Keypad keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS); //keypad 생성
+
 String resultStr = "";
+String protectStr = "";
 String pwd = "100115";
+
+int failCnt = 0;
 
 void beep(int delayTime = 100);
 void setup() {
@@ -44,18 +48,27 @@ void loop() {
   bool isGet = getLine();
 
   com.run();
-  if (isGet) {
-    if (resultStr == pwd) {
-      // 문 개방(서보모터)
-      open();
-      SimpleTimer &timer = com.getTimer();
+  if (isGet) check();      
+}
 
-      time_id = timer.setTimeout(3000, close);
-    }
-    else beep(500);
-    
-    resultStr = "";
-  }      
+void check() {
+  // 키 입력이 들어오면 백라이트 on
+  com.backlightOn();
+  if (resultStr == pwd) {
+    // 문 개방(서보모터)
+    open();
+    SimpleTimer &timer = com.getTimer();
+
+    time_id = timer.setTimeout(3000, close);
+  }
+  else {
+    beep(500);
+    failCnt += 1;
+    close();
+  }
+  
+  resultStr = "";
+  protectStr = "";
 }
 
 // '*' 을 입력받았을 때 true return -> '*' 은 제외하고 !
@@ -70,6 +83,8 @@ bool getLine() {
     }
     else {
       resultStr += key;
+      protectStr += "*";
+      com.print(1, protectStr);
     }
   }
   return false;
@@ -88,7 +103,15 @@ void open() {
 }
 
 void close() {
-  com.print(1, "[Door] is /Cls/");
+  // 문 닫을 때 백라이트 off
+  com.backlightOff();
+
+  if (failCnt == 3) {
+    delay(60000); // 1분간 입력 불가
+    failCnt = 0;
+  }
+  else com.print(1, "[Door] is /Cls/");
+
   servo.write(0);
   state = 0;
 }

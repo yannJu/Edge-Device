@@ -1,4 +1,4 @@
-## Network 관련 Exercise (ex56_) 📿
+## Network 관련 Exercise (ex56_ex58, ex60) 📿
 ---
 1. ### [Bluetooth(ex56_ex58)](./Bluetooth/)
    - `Bluetooth` 를 이용한 통신
@@ -22,4 +22,11 @@
          -  `MiniCom`을 상속하여 구성
          -  `LED`와 `SERVO` 센서를 통해 실습 진행
       -  *[ex34 수정](../SensorDevice(ex34_ex48)/KEYPAD/ex35_keypad_exercise2)* : `KEYPAD` 대신 `Bluetooth` 통신으로 문열기
-2. 
+2. ### [NodeMCU(ex60_ex)](./NodeMCU/)
+   - `WiFi` 를 통한 통신이 가능하게 함
+   - **esp8266** 보드 매니저 설치
+   - `NodeMCU` 관련 예제 실습
+     - *[ex60_getIp_usingMCU](./NodeMCU/ex60_getIp_usingMCU/)* : **IP주소** 를 읽어와 동작시키기 
+       - **esp8266** 의 `board`를 설치하여 `NodeMCU` 의 **port** 번호로 업로드
+       - _**2.4Ghz**_ 로만 연결 가능
+     - 
