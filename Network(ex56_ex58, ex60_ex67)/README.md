@@ -1,4 +1,4 @@
-## Network 관련 Exercise (ex56_ex58, ex60) 📿
+## Network 관련 Exercise (ex56_ex58, ex60_ex67) 📿
 ---
 1. ### [Bluetooth(ex56_ex58)](./Bluetooth/)
    - `Bluetooth` 를 이용한 통신
@@ -22,7 +22,7 @@
          -  `MiniCom`을 상속하여 구성
          -  `LED`와 `SERVO` 센서를 통해 실습 진행
       -  *[ex34 수정](../SensorDevice(ex34_ex48)/KEYPAD/ex35_keypad_exercise2)* : `KEYPAD` 대신 `Bluetooth` 통신으로 문열기
-2. ### [NodeMCU(ex60_ex)](./NodeMCU/)
+2. ### [NodeMCU(ex60_ex63)](./NodeMCU/)
    - `WiFi` 를 통한 통신이 가능하게 함
    - **esp8266** 보드 매니저 설치
    - `NodeMCU` 관련 예제 실습
@@ -35,7 +35,7 @@
      - *[ex62_nodeMCU_webserver](./NodeMCU/ex62_nodeMCU_webserver/)* : `NodeMCU` 를 이용하여 **웹서버** 만들기
        - `NodeMCU` 가 **웹서버** 의 역할을 하도록 한다.
          - `NodeMCU` 의 **IP**주소로 웹에서 접속하면 `NodeMCU` 서버가 `response` 한 값을 볼 수 있다.
-3. ### [Mosquitto(ex63)](./Mosquitto/) & [MQTT(ex64_)](./MQTT/) 
+3. ### [Mosquitto(ex63)](./Mosquitto/) & [MQTT(ex64_67)](./MQTT/) 
    - 센서 디바이서에서 **정보**가 측정되면 해당 **정보**가 필요한 `client` 에게 전달 : `MQTT Broker`
      - 센서는 누가 해당 **정보** 를 필요로 하는지 알 필요가 없다.
    -   센서 = `Publisher` , 클라이언트 = `Subscriber` (보통은 이러한 관계를 갖지만 **둘다** 가능한 경우도 많다.)

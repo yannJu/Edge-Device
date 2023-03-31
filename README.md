@@ -51,7 +51,7 @@
     - `PIR`
     - `Ultrasonic`
     - `MIC`  
-10. ### [Network(ex56_ex58)](./Network(ex56_ex58)/)
+10. ### [Network(ex56_ex58, ex60_ex67)](./Network(ex56_ex58, ex60_ex67)/)
     - `Bluetooth` 통신 제어  
     - `nodeMCU` 를 이용한 `WiFi` 통신
     - `MQTT` 통신 : **mosquitto** 
