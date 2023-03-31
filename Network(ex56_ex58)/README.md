@@ -71,3 +71,5 @@
     - `MqttCom` 클래스를 만들어 **라이브러리**화
       - [libraries](../libraries/) 로 이동
       - *[ex65_nodeMCU_withMQTT_withClass](./MQTT/ex65_nodeMCU_withMQTT_withClass/)* : 클래스화 된 `MqttCom` 을 이용하여 **ex64** 구현
+    - `DB` 와 연동준비를 위해 얻은 센서값 들을 **json** 으로 만들기
+      - 관련 실습 : [ex66_json01.py](./Mosquitto/ex66_json01.py)

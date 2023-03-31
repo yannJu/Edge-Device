@@ -1,5 +1,6 @@
 import paho.mqtt.client as mqtt
 from time import sleep
+from datetime import datetime
 
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code " + str(rc))
@@ -12,9 +13,19 @@ def on_connect(client, userdata, flags, rc):
         
 def on_message(client, userdata, msg):
     # value = float(msg.payload.decode())
-    value = msg.payload.decode()
+    # value = msg.payload.decode()
     
-    print(f" {msg.topic} {value} ")
+    # print(f" {msg.topic} {value} ")
+    #================== 조도센서 값 sub
+    parts = msg.topic.split('/')
+    user_id = parts[1]
+    place = parts[3]
+    type = parts[4]
+    value = float(msg.payload.decode())
+    
+    now = datetime.now()
+    
+    print(user_id, place, type, value, now)
     
 # 1. MQTT 클라이언트 객체 인스턴스화
 client = mqtt.Client()
@@ -26,8 +37,8 @@ client.on_message = on_message
 try:
     # 3. 브로커 연결
     client.connect("localhost")
-    client.loop_start()
-    # client.loop_forever()
+    # client.loop_start()
+    client.loop_forever()
     
 except Exception as e:
     print("Error - ! >> ", e)

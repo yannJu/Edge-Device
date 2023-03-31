@@ -43,8 +43,8 @@ void MqttCom::reconnect() {
       Serial.print(buf);
       print(0, buf);
 
-      Serial.println("Try again in 5 Sec. .");
-      print(1, "Try again in 5 Sec. .");
+      Serial.println(" Try again in 5 Sec. .");
+      print(1, "Try again in 5s -");
 
       delay(5000);
     }
