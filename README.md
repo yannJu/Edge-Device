@@ -51,7 +51,14 @@
     - `PIR`
     - `Ultrasonic`
     - `MIC`  
-10. ### [Network(ex56_ex58, ex60_ex67)](./Network(ex56_ex58, ex60_ex67)/)
+10. ### [Network(ex56_ex58, ex60_ex67)](./Network(ex56_ex58%2C%20ex60_ex67)/)
     - `Bluetooth` 통신 제어  
     - `nodeMCU` 를 이용한 `WiFi` 통신
     - `MQTT` 통신 : **mosquitto** 
+11. ### [OpenAPI(ex68_ex69)](./OpenAPI(ex68_ex69)/) 
+    - `OpenAPI` 를 활용하여 `NodeMCU`, `MQTT` 와 활용
+    - **API** 크롤링, 파일 다운로드 실습 : *[ex68_ApiTest.py](./OpenAPI(ex68_ex69)/ex68_ApiTest.py)*  & *[ex69_openApi_get.p](./OpenAPI(ex68_ex69)/ex69_openApi_get.py)*  
+12. ### [ArduinoJson(ex70_ex71)](./ArduinoJson/) 
+    - *Python* 의 **dictionary** 를 **String** 으로 변환하여 `Publish` 후 `nodeMCU` 에서 **json** 을 `Subscribe`  하여 **String** 으로 변환하였다.
+      - *Python* : *[ex70_pub01.py](./ArduinoJson/ex70_pub01.py)*  
+      - *nodeMCU* : *[ex71_arduino_json_exercise](./ArduinoJson/ex71_arduino_json_exercise/)*
