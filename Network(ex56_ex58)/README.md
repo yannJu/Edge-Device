@@ -67,4 +67,7 @@
         - **daemon thread** 와 **main thread** 실습
     - `NodeMCU` 에서 `MQTT` 사용
       - *[ex64_nodeMCU_withMQTT](./MQTT/ex64_nodeMCU_withMQTT/)* : `NodeMCU` 에서 **Publish** 한 값을 `PC` 에서 **Subscribe** 하기
-        - `PC`에서 **Publish** 도 함께 진행 (`inTopic`)
+        - `PC`에서 **Publish** 도 함께 진행 
+    - `MqttCom` 클래스를 만들어 **라이브러리**화
+      - [libraries](../libraries/) 로 이동
+      - *[ex65_nodeMCU_withMQTT_withClass](./MQTT/ex65_nodeMCU_withMQTT_withClass/)* : 클래스화 된 `MqttCom` 을 이용하여 **ex64** 구현
