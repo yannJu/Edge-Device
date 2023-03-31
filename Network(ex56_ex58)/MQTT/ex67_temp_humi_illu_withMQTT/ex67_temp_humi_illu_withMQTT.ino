@@ -16,7 +16,8 @@ DHT dht11(D7, DHT11);
 void setup() {
   // put your setup code here, to run once:
   com.init(ssid, pwd);
-  // com.setServer(mqtt_server, "inTopic", callback); //inTopic 으로 subscribe 도 함
+  com.setServer(mqtt_server);
+  com.setServer(mqtt_server, NULL, callback); //inTopic 으로 subscribe 도 함
   com.setInterval(3000, publish); //2초마다 publish
 
   dht11.begin();
