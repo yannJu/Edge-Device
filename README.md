@@ -58,7 +58,7 @@
 11. ### [OpenAPI(ex68_ex69)](./OpenAPI(ex68_ex69)/) 
     - `OpenAPI` 를 활용하여 `NodeMCU`, `MQTT` 와 활용
     - **API** 크롤링, 파일 다운로드 실습 : *[ex68_ApiTest.py](./OpenAPI(ex68_ex69)/ex68_ApiTest.py)*  & *[ex69_openApi_get.p](./OpenAPI(ex68_ex69)/ex69_openApi_get.py)*  
-12. ### [ArduinoJson(ex70_ex71)](./ArduinoJson/) 
+12. ### [ArduinoJson(ex70_ex71)](./ArduinoJson(ex70_ex71)/) 
     - *Python* 의 **dictionary** 를 **String** 으로 변환하여 `Publish` 후 `nodeMCU` 에서 **json** 을 `Subscribe`  하여 **String** 으로 변환하였다.
       - *Python* : *[ex70_pub01.py](./ArduinoJson/ex70_pub01.py)*  
       - *nodeMCU* : *[ex71_arduino_json_exercise](./ArduinoJson/ex71_arduino_json_exercise/)*
